@@ -1,0 +1,18 @@
+Name:                smallcheck-regex
+Version:             0.0.1
+Homepage:            http://github.com/audreyt/smallcheck-regex/
+Category:            SmallCheck, test, regex
+Synopsis:            Generate regex-constrained strings for SmallCheck
+Description:         Generate regex-constrained strings for SmallCheck
+License:             PublicDomain
+Author:              Audrey Tang
+Maintainer:          audreyt@audreyt.org
+Copyright:           Audrey Tang 2014 (CC0)
+Cabal-Version:       >= 1.2
+Build-Type:          Simple
+
+Library
+    Build-Depends:   base>=3 && <5, smallcheck >= 1.1, regex-genex >= 0.6.0
+    Exposed-modules: Test.SmallCheck.Regex
+    Extensions:      KindSignatures, DataKinds, GADTs, MultiParamTypeClasses, FlexibleInstances
+    Hs-source-dirs:  src
